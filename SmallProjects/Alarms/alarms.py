@@ -32,5 +32,5 @@ while True:
     print('| '+' wake up! '+' |')
     print('*'*10)
     if alarm_tone =='m':
-      playsound('alarm.wav')
+      playsound('alarms.wav')
     break 
