@@ -76,3 +76,16 @@ if __name__ == "__main__":
 # - Prints "Valid" or "Invalid" to the console based on the function's return value.
 
 # This change makes the script directly executable for testing and demonstration.
+
+
+def khalvalid(s:str)-> bool:
+    stack = []
+    mapping = {"(": ")", "{": "}", "[": "]"}
+    for char in mapping:
+        if char in mapping:
+            top_element = stack.pop() if stack else '#'
+            if mapping[char] != top_element:
+                return False
+            else:    
+                stack.append(char)
+    return not stack

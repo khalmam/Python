@@ -1,4 +1,4 @@
-# list-comprehensions
+2# list-comprehensions
 
 # Let's learn about list comprehensions! 
 # You are given three integers  and  
@@ -17,4 +17,6 @@ if __name__ == '__main__':
     
     coordinates = [[i, j, k] for i in range(x + 1) for j in range(y + 1) for k in range(z + 1) if i + j + k != n]
 
-print(coordinates)
+    print(coordinates)
+
+
